@@ -2,14 +2,13 @@
 <% if !duser_signed_in? %>
 
   <div class="jumbotron">
-    <h1 class="display-4">Welcome to MenexaTech</h1>
+    <h1 class="display-4 animated fadeIn">Welcome to MenexaTech</h1>
     <p class="lead">
       This is a web application allowing students to learn in a more effective
       way. It enables them to share previous exams and their answers as well as
       offering them a place for discussion.
     </p>
     <hr class="my-4">
-    <p></p>
     <%= link_to "Sign up now", new_duser_registration_path, class: "btn btn-primary btn-lg", role: "button" %>
   </div>
 

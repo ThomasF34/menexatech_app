@@ -11,7 +11,8 @@
 
   <body>
     <nav class="navbar navbar-expand-sm navbar-light bg-light">
-      <%= link_to "MenexaTech", root_path, class: "navbar-brand" %>
+      <%= link_to image_tag("logo.png", alt:"logo", id:"logo-img", class:"img-responsive"), root_path, class: "navbar-brand" %>
+
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -50,7 +51,7 @@
       </div>
     </nav>
 
-    <div class="container">
+    <div class="container" id="mainContainer">
       <% flash.each do |message_type, message| %>
         <%# TODO: come up with a better way to do this %>
         <% if message_type == "notice" %>

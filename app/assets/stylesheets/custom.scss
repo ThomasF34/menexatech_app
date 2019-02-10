@@ -14,6 +14,19 @@
   margin-bottom: 20px;
 }
 
+
+.btn-primary{
+       border:none;
+       padding:10px 15px;
+       border-radius:15px;
+       background: #1161ee;
+       box-shadow: 2px 2px 11px rgba(50, 50, 50, 0.75);
+}
+
+#logo-img{
+        width: 75px;
+}
+
 // Bootstrap 4 breakpoints & gutter
 $grid-breakpoints: (
 xs: 0,
@@ -33,6 +46,18 @@ md: 3,
 lg: 4,
 xl: 5
 );
+
+@media (min-width: 768px) {
+	#mainContainer{
+		background: white;
+		border-radius: 10px;
+		padding: 20px;
+	}
+
+	body{
+		background: grey;
+	}
+}
 
 @each $name, $breakpoint in $grid-breakpoints {
   @media (min-width: $breakpoint) {
