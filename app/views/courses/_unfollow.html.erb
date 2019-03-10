@@ -1,3 +1,3 @@
 <%= form_for(current_duser.followments.find_by(course_id: @course.id), html: { method: :delete }, remote: true) do |f| %>
-  <%= f.submit "Unfollow", class: "btn" %>
+  <%= f.submit "Unfollow", class: "btn btn-outline-danger" %>
 <% end %>

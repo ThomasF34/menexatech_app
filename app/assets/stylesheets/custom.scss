@@ -1,6 +1,6 @@
 @import "bootstrap";
 
-.alert {
+.alert{
   margin-top: 20px;
 }
 
@@ -14,14 +14,26 @@
   margin-bottom: 20px;
 }
 
-
-.btn-primary{
-       border:none;
-       padding:10px 15px;
-       border-radius:15px;
-       background: #1161ee;
-       box-shadow: 2px 2px 11px rgba(50, 50, 50, 0.75);
+[class*="btn-outline"]{
+       border-width: 2px;
+       padding:4px 10px;
+       border-radius:0px;
 }
+
+// .btn-primary{
+//        color: #1161EE;
+//        border-color: #1161EE;
+// }
+
+// .btn-secondary{
+//        color: #595959;
+//        border-color: #595959;
+// }
+
+// .btn-danger{
+//        color: #E82C0C;
+//        border-color: #E82C0C;
+// }
 
 #logo-img{
         width: 75px;
@@ -52,10 +64,15 @@ xl: 5
 		background: white;
 		border-radius: 10px;
 		padding: 20px;
+		margin-bottom: 20px;
 	}
 
 	body{
-		background: grey;
+		background: rgb(126,167,209);
+		background: -moz-linear-gradient(70deg, rgba(126,167,209,1) 0%, rgba(44,149,255,1) 100%);
+		background: -webkit-linear-gradient(70deg, rgba(126,167,209,1) 0%, rgba(44,149,255,1) 100%);
+		background: linear-gradient(70deg, rgba(126,167,209,1) 0%, rgba(44,149,255,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7ea7d1",endColorstr="#2c95ff",GradientType=1);
 	}
 }
 

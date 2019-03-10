@@ -8,5 +8,5 @@
 </div>
 
 <% if current_duser.try(:admin?) %>
-  <%= link_to "Add new exam", new_old_exam_path(course_id: @course.id), class: "btn btn-primary btn-md", role: "button" %>
+  <%= link_to "Add new exam", new_old_exam_path(course_id: @course.id), class: "btn btn-outline-primary btn-md", role: "button" %>
 <% end %>
