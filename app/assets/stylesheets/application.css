@@ -13,3 +13,28 @@
  *= require_tree .
  *= require_self
  */
+
+.nav-item > a {
+  position: relative;
+  text-decoration: none;
+}
+
+.nav-item > a:before {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 2px;
+  bottom: 5px;
+  left: 10%;
+  background: #2a90cf;
+  visibility: hidden;
+  border-radius: 4px;
+  transform: scaleX(0);
+  transition: .25s linear;
+}
+
+.nav-item > a:hover:before,
+.nav-item > a:focus:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
